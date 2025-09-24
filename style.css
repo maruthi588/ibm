@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input, .task-input button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.task-input input {
+  flex: 1;
+}
+
+.task-input button {
+  background: #06b6d4;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #334155;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button.complete, button.delete {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.complete {
+  background: #16a34a;
+  color: white;
+}
+
+button.delete {
+  background: #dc2626;
+  color: white;
+}
+
+#progressBarContainer {
+  background: #475569;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0;
+  background: #06b6d4;
+  transition: width 0.3s;
+}
